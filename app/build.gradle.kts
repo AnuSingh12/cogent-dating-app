@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.compose)
+    alias(libs.plugins.google.services)
 }
 
 android {
@@ -48,7 +49,7 @@ dependencies {
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.lifecycle.viewmodel.ktx)
     implementation(libs.androidx.navigation3.ui)
-    implementation(libs.firebase.auth.ktx)
+//    implementation(libs.firebase.auth.ktx)
     testImplementation(libs.junit)
     androidTestImplementation(platform(libs.androidx.compose.bom))
     androidTestImplementation(libs.androidx.compose.ui.test.junit4)
@@ -63,16 +64,16 @@ dependencies {
 
     implementation(platform("com.google.firebase:firebase-bom:34.0.0"))
 
-    implementation("com.google.firebase:firebase-auth-ktx")
+    implementation("com.google.firebase:firebase-auth")
 
-    implementation("androidx.lifecycle:lifecycle-viewmodel-compose")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.9.3")
 
     implementation("androidx.navigation:navigation-compose:2.9.3")
 
-    implementation("io.coil-kt:coil-compose")
+    implementation("io.coil-kt:coil-compose:2.7.0")
 
-    implementation("io.agora.rtc:full-sdk:4.5.2")
+    implementation("io.agora.rtc:full-sdk:4.4.0")
 
-    implementation("androidx.lifecycle:lifecycle-runtime-compose")
+    implementation("androidx.lifecycle:lifecycle-runtime-compose:2.9.3")
 
 }

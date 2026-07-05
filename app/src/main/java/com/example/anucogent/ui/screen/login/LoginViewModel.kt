@@ -82,5 +82,10 @@ class LoginViewModel(
         )
 
     }
+    fun demoLogin() {
+
+        _loginSuccess.value = true
+
+    }
 
 }

@@ -179,6 +179,23 @@ fun LoginScreen(
             }
 
         }
+        Spacer(modifier = Modifier.height(20.dp))
+
+        OutlinedButton(
+
+            onClick = {
+
+                viewModel.demoLogin()
+
+            },
+
+            modifier = Modifier.fillMaxWidth()
+
+        ) {
+
+            Text("Demo Login")
+
+        }
 
     }
 
