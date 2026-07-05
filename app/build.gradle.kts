@@ -46,6 +46,9 @@ dependencies {
     implementation(libs.androidx.compose.ui.tooling.preview)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
+    implementation(libs.androidx.lifecycle.viewmodel.ktx)
+    implementation(libs.androidx.navigation3.ui)
+    implementation(libs.firebase.auth.ktx)
     testImplementation(libs.junit)
     androidTestImplementation(platform(libs.androidx.compose.bom))
     androidTestImplementation(libs.androidx.compose.ui.test.junit4)
@@ -53,4 +56,23 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     debugImplementation(libs.androidx.compose.ui.test.manifest)
     debugImplementation(libs.androidx.compose.ui.tooling)
+
+    implementation("androidx.compose.material:material-icons-extended")
+
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.10.2")
+
+    implementation(platform("com.google.firebase:firebase-bom:34.0.0"))
+
+    implementation("com.google.firebase:firebase-auth-ktx")
+
+    implementation("androidx.lifecycle:lifecycle-viewmodel-compose")
+
+    implementation("androidx.navigation:navigation-compose:2.9.3")
+
+    implementation("io.coil-kt:coil-compose")
+
+    implementation("io.agora.rtc:full-sdk:4.5.2")
+
+    implementation("androidx.lifecycle:lifecycle-runtime-compose")
+
 }
